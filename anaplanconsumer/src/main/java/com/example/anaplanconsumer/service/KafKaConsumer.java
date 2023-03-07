@@ -21,7 +21,7 @@ public class KafKaConsumer {
     ClientDetailsRepository clientDetailsRepository;
 
     @KafkaListener(topics = Constants.Topic, groupId = Constants.GROUP_ID)
-    public void consume(String message) {
+    public void consume(String message) throws Exception {
         logger.info("Inside consume of KafkaConsumer");
         try {
             ObjectMapper objectMapper = new ObjectMapper();
@@ -31,7 +31,7 @@ public class KafKaConsumer {
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
     }
 

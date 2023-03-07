@@ -11,4 +11,5 @@ public interface Constants {
     String CLIENT_DATA_SAVED_SUCCESSFULLY = "client.data.saved.successfully";
 
     String INVALID_REQUEST_DATA = "invalid.request.data" ;
+    String ANAPLAN_CONSUMER_ERROR = "anaplan.consumer.error";
 }
